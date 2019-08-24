@@ -1,0 +1,11 @@
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.listaCurso {
+  padding: 1em;
+  margin-bottom: 2em;
+}
