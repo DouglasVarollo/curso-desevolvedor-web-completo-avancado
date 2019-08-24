@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <title>Curso Google Chart API</title>
+		<script src="https://www.gstatic.com/charts/loader.js"></script>
+		<script>
+
+			google.charts.load('current',{'packages':['corechart']});
+			google.charts.setOnLoadCallback(gerarGrafico);
+			
+			function gerarGrafico() {
+				var dados = new google.visualization.arrayToDataTable([
+						['Período', 'Calabresa', 'Mussarela', 'Margueritta', 'Quatro Queijos'],
+						['2016', 100, 150, 120, 80],
+						['2017', 65, 80, 20, 50],
+						['2018', 84, 104, 200, 50],
+						['2019', 25, 36, 120, 60]
+					]);
+
+				var aparencia = {
+					title: 'Vendas de pizzas em milhares',
+					width: 1200,
+					height: 500,
+					seriesType: 'bars',
+					animation: {
+						startup: true,
+						duration: 3000,
+						easing: 'out'
+					}
+				};
+
+				var grafico = new google.visualization.ComboChart(document.querySelector('#janelaGrafico'));
+				grafico.draw(dados, aparencia);
+
+			}
+
+		</script>
+    </head>
+    <body>
+		<div id="janelaGrafico"></div>
+		
+    </body>
+</html>

@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <title>Curso Google Chart API</title>
+		
+		<script src="https://www.gstatic.com/charts/loader.js"></script>
+		<script>
+			google.charts.load('current',{'packages':['line']});
+			google.charts.setOnLoadCallback(gerarGrafico);
+			
+			function gerarGrafico() {
+				var dados = new google.visualization.DataTable();
+				dados.addColumn('string', 'Ano de 2018');
+				dados.addColumn('number', 'Vendas online');
+				dados.addColumn('number','Vendas lojas SP');
+				dados.addColumn('number', 'Vendas lojas RJ');
+				dados.addRows([
+					['Janeiro', 10, 50, 40],
+					['Fevereiro', 10, 69.5, 32.4],
+					['Março', 21, 57, 25.7],
+					['Abril', 11.7, 18.8, 10.5],
+					['Maio', 11.9, 17.6, 7.7],
+					['Junho', 10, 50, 40],
+					['Julho', 10, 50, 40],
+					['Agosto', 10, 50, 40],
+					['Setembro', 10, 50, 40],
+					['Outubro', 10, 50, 40],
+					['Novembro', 10, 50, 40],
+					['Dezembro', 10, 50, 40]
+				]);
+
+				var aparencia = {
+					chart: {
+						title: 'Vendas de pizzas em milhares',
+						subtitle: 'No ano de 2018'
+					},
+					width: 1280,
+					height: 600
+				}
+
+				var grafico = new google.charts.Line(document.querySelector('#janelaGrafico'));
+				grafico.draw(dados, google.charts.Line.convertOptions(aparencia));
+			}
+		
+		
+		</script>
+    </head>
+    <body>
+		<div id="janelaGrafico"></div>
+    </body>
+</html>

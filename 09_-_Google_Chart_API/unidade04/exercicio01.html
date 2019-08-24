@@ -1,0 +1,32 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('visualization', {
+        'packages':['geochart'],
+        'mapsApiKey': 'AIzaSyCscInkZ75ty6fCLPtNg7IvE9XqTg-ytkA'
+      });
+      google.charts.setOnLoadCallback(gerarGrafico);
+
+      function gerarGrafico() {
+        var data = google.visualization.arrayToDataTable([
+            ['Países', 'População'],
+            ['China', 1380000000],
+            ['Japão', 126000000]
+        ]);
+
+        var options = {
+          region: 'world',
+          colorAxis: { colors: ['#FFCA00', '#AA0000'] }
+        }
+
+        var chart = new google.visualization.GeoChart(document.getElementById('mapa_div'));
+        chart.draw(data, options);
+      }
+    </script>
+  </head>
+  <body>
+    <div id="mapa_div" style="width: 900px; height: 500px;"></div>
+  </body>
+</html>

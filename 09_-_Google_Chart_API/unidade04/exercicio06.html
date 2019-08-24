@@ -1,0 +1,35 @@
+<html>
+  <head>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      	google.charts.load('visualization', {
+        'packages':['geochart'],
+        'mapsApiKey': 'AIzaSyCscInkZ75ty6fCLPtNg7IvE9XqTg-ytkA'
+      });
+      google.charts.setOnLoadCallback(gerarGrafico);
+
+      function gerarGrafico() {
+        var data = google.visualization.arrayToDataTable([
+          	['Cidades', 'Votos'],
+          	['Recife', 800],
+			['Curitiba', 600],
+          	['Brasilia', 800],
+			['Sao Paulo', 1500],
+			['Fortaleza', 1000],
+			['Salvador', 1200],
+			['Manaus', 1330]	
+        ]);
+
+        var options = {
+            region:'BR',
+            displayMode: 'text'
+		};
+        var chart = new google.visualization.GeoChart(document.getElementById('mapa_div'));
+        chart.draw(data, options);
+      }
+    </script>
+  </head>
+  <body>
+    <div id="mapa_div" style="width: 1200px; height: 500px;"></div>
+  </body>
+</html>

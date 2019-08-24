@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <title>Meu segundo grafico</title>
+		
+		<style>
+			div {
+				float: left;
+			}
+		</style>
+		
+		<script src="https://www.gstatic.com/charts/loader.js"></script>
+		<script>
+			google.charts.load('current',{'packages':['corechart']});
+			google.charts.setOnLoadCallback(gerarGrafico);
+			
+			function gerarGrafico() {
+				var dados = new google.visualization.DataTable();
+				dados.addColumn('string','Produtos');
+				dados.addColumn('number','Vendas');
+				dados.addRows([
+					['Calabresa',20],
+					['Mussarela',10],
+					['Margherita',20],
+					['Brasileira',10],
+					['Quatro Queijos',40]
+				]);
+				
+				var aparencia = {
+					'title':'Vendas de Pizzas em %',
+					'width':600,
+					'height':500
+				}
+				
+				var grafico = new google.visualization.BarChart(document.querySelector("#janelaGrafico1"))
+				grafico.draw(dados,aparencia);
+
+				var grafico2 = new google.visualization.PieChart(document.querySelector("#janelaGrafico2"));
+				grafico2.draw(dados, aparencia);
+			}
+		
+		
+		</script>
+    </head>
+    <body>
+		<div id="janelaGrafico1"></div>
+		<div id="janelaGrafico2"></div>
+    </body>
+</html>

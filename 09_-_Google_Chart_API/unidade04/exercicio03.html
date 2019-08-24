@@ -1,0 +1,39 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('visualization', {
+        'packages':['geochart'],
+        'mapsApiKey': 'AIzaSyCscInkZ75ty6fCLPtNg7IvE9XqTg-ytkA'
+      });
+      google.charts.setOnLoadCallback(drawRegionsMap);
+
+      function drawRegionsMap() {
+        var data = google.visualization.arrayToDataTable([
+          	['Países', 'População'],
+            ['Brazil', 208000000],
+            ['Colombia', 48000000],
+            ['Argentina',43000000],
+            ['Peru',31000000],
+            ['Venezuela',30000000],
+            ['Chile',60000000],
+            ['Equador',49000000],
+            ['Bolivia',42000000],
+            ['Paraguai',38000000]
+        ]);
+
+        var options = {
+			 region: '005',
+             colorAxis: { colors: ['#FFCA00', 'black', '#AA0000'] }
+		};
+
+        var chart = new google.visualization.GeoChart(document.getElementById('mapa_div'));
+        chart.draw(data, options);
+      }
+    </script>
+  </head>
+  <body>
+    <div id="mapa_div" style="width: 900px; height: 500px;"></div>
+  </body>
+</html>

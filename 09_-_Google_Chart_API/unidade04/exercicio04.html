@@ -1,0 +1,40 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('visualization', {
+        'packages':['geochart'],
+        'mapsApiKey': 'AIzaSyCscInkZ75ty6fCLPtNg7IvE9XqTg-ytkA'
+      });
+      google.charts.setOnLoadCallback(gerarGrafico);
+
+      function gerarGrafico() {
+        var data = google.visualization.arrayToDataTable([
+          	['Estados', 'População'],
+            ['BR-SP', 43663000],
+            ['BR-MG', 20000000],
+            ['BR-RJ', 16000000],
+            ['BR-BA', 15000000],
+            ['BR-RS', 11000000],
+            ['BR-PR', 10000000],
+            ['BR-PE', 9200000],
+            ['BR-CE', 8700000],
+            ['BR-PA', 7900000],
+            ['BR-SC', 6600000]
+        ]);
+
+        var options = {
+            region:'BR',
+            resolution:'provinces',
+            colorAxis: { colors: ['#FFCA00', 'black', '#AA0000'] }
+		};
+        var chart = new google.visualization.GeoChart(document.getElementById('mapa_div'));
+        chart.draw(data, options);
+      }
+    </script>
+  </head>
+  <body>
+    <div id="mapa_div" style="width: 900px; height: 500px;"></div>
+  </body>
+</html>

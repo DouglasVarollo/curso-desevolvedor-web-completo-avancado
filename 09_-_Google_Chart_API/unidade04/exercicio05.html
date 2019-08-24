@@ -1,0 +1,39 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      	google.charts.load('visualization', {
+        'packages':['geochart'],
+        'mapsApiKey': 'AIzaSyCscInkZ75ty6fCLPtNg7IvE9XqTg-ytkA'
+      });
+      google.charts.setOnLoadCallback(gerarGrafico);
+
+      function gerarGrafico() {
+        var data = google.visualization.arrayToDataTable([
+          	['Cidades', 'Vendas'],
+            ['Recife', 800],
+            ['Curitiba', 600],
+            ['Brasilia', 800],
+            ['São Paulo', 1500],
+            ['Fortaleza', 1000],
+            ['Salvador', 1200],
+            ['Manaus', 1330]
+        ]);
+
+        var options = {
+            region:'BR',
+            resolution: 'provinces',
+            displayMode: 'markers',
+            tooltip: {trigger: 'selection'},
+            sizeAxis:{maxSize:30, minSize:5}
+		};
+        var chart = new google.visualization.GeoChart(document.getElementById('mapa_div'));
+        chart.draw(data, options);
+      }
+    </script>
+  </head>
+  <body>
+    <div id="mapa_div" style="width: 1200px; height: 500px;"></div>
+  </body>
+</html>
