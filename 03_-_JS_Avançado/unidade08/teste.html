@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+	</head>
+	<body>
+		<div id="janela">
+			
+		</div>
+
+		<script>
+			
+			var indice = 0;
+			var intervalo;
+
+			function mudarValor()
+			{
+				janela.innerHTML = indice;
+				indice ++;
+
+				if ( indice >= 4 )
+				{
+					clearInterval(intervalo);
+					janela.innerHTML = 'Parou';
+				}
+			}
+
+			intervalo = setInterval(mudarValor, 1000);
+
+		</script>
+	</body>
+</html>
