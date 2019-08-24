@@ -1,0 +1,25 @@
+
+
+/* iPhone 7*/
+@media only screen and (min-width:375px) and (max-width:767px) {
+	body {   
+    	background-color: brown;
+	}
+
+    h1 
+    {
+    	color: red;
+    }
+}
+
+/* iPhone 7 Plus*/
+@media only screen and (min-width:414px) and (max-width:767px) {
+	body {   
+    	background-color: green;
+	}
+
+    h1 
+    {
+    	color: blue;
+    }
+}

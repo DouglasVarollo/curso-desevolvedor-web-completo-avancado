@@ -1,0 +1,17 @@
+main
+{
+	width: 90%;
+	text-align: center;
+	box-shadow: none;
+}
+
+article
+{
+	padding: 5%;
+	float: none;
+}
+
+img
+{
+	width: 100%;
+}

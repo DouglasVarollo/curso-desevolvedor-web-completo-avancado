@@ -1,0 +1,66 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, user-scalable=no">
+        <title>Curso de CSS3 Avancado</title>
+        <style>
+            body 
+            {
+                margin:0;   
+            }
+        
+            header 
+            {
+                width: 100%;
+                height: 600px;
+                margin: 0 auto;
+            }
+            
+            header img 
+            {
+                width: 100%;
+                height: 600px;
+                object-fit: cover;
+                object-position: top center;
+            }   
+
+            /* PEQUENO */
+
+            @media only screen and (min-width: 320px) and (max-width: 425px)
+            {
+                header
+                {
+                    height: 320px;
+                }
+            }
+
+            /* GRANDE */
+
+            @media only screen and (min-width: 1367) and (max-width: 1980px)
+            {
+                header
+                {
+                    height: 800px;
+                }
+            }     
+
+            /* MAIOR */
+            
+            @media only screen and (min-width: 1981px) and (max-width: 2880px)
+            {
+                header
+                {
+                    height: 1000px;
+                }
+            }     
+
+
+
+        
+        </style>
+    </head>
+    <body>
+        <header>
+            <img src="_img/mulher-computador-1200x628.jpg">
+        </header>
+    </body>
+</html>
