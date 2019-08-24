@@ -1,0 +1,24 @@
+.main-nav {
+  background: #DF3B57;
+  padding: 0.5em;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+}
+
+.main-nav li {
+  margin: 1.5em;
+  text-align: center;
+  display: inline-block;
+}
+
+.main-nav a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 18px;
+  color: white;
+}
+
+.main-nav a.current {
+  color:#FEB95F;
+}
