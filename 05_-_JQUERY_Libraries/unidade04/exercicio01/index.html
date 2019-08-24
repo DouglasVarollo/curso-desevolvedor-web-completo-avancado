@@ -1,0 +1,50 @@
+<!--
+***
+Créditos:
+http://www.workshop.rs/jqbargraph/
+***
+-->
+
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Curso jQuery Avançado - Libraries</title>
+		<style>
+			#janela_grafico {
+				width:600px;
+				height:350px;
+				margin:30px auto;
+                font-family: Arial,sans-serif;
+                font-size: 14px;
+                color:#666
+			}
+		</style>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="_js/jqBarGraph.1.1.min.js"></script>
+        <script>
+			$( function() {
+                dadosGrafico = new Array(
+    [10,'Jan','#002A4A'], [15,'Fev','#17607D'], [13,'Mar','#FFF1CE'], [16,'Abr','#FF9311'], [14,'Mai','#D64700']
+);  
+
+                $('#janela_grafico').jqBarGraph({
+                    data: dadosGrafico,
+                    width: 600,
+                    height: 200,
+                    barSpace: 20,
+                    speed: 2,
+                    prefix: "R$ ",
+                    postfix: ",00",
+                    position: 'bottom'
+                });
+			})
+		</script>
+    </head>
+
+    <body>
+        <div id="janela_grafico">
+        
+        </div>
+    </body>
+</html>
