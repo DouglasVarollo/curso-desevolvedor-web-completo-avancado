@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="pt">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>jQuery UI Menu</title>
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <script>
+
+            $(function()
+            {
+                var meuTab = $('#tabs').tabs({
+                    active:1,
+                    collapsible:true,
+                    // event:'mouseover'
+
+                });
+
+                meuTab.find('.ui-tabs-nav').sortable({
+                    axis:'x',
+                    stop:function()
+                    {
+                        meuTab.tabs('refresh');
+                    }
+                });
+                
+            });
+            
+        </script> 
+    </head>
+    <body>
+        <div id="tabs">
+            <ul>
+                <li><a href="#tab1">Calabresa</a></li>
+                <li><a href="#tab2">Margueritta</a></li>
+                <li><a href="#tab3">Quatro Queijos</a></li>
+            </ul>
+            <div id="tab1">
+                <h3>Calabresa</h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+            </div>
+
+            <div id="tab2">
+                <h3>Margueritta</h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur.
+                </p>
+            </div>
+
+            <div id="tab3">
+                <h3>Quatro Queijos</h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat.
+                </p>
+            </div>
+
+        </div>
+    </body>
+</html>
