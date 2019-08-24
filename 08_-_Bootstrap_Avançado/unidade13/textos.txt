@@ -1,0 +1,23 @@
+<h3>Plaza Mayor</h3>
+<p>É um dos símbolos da cidade. A praça é grande e se destaca pela arquitetura com pedras, além de ser cheia de lojas e restaurantes nas suas extremidades.</p>
+<a href="#" class="btn btn-info">Agendar um tour</a>
+
+<h3>Restaurante Botin</h3>
+<p>Em Madrid existe um restaurante que é considerado pelo Guinness Book of Records como o mais antigo do mundo. A sua especialidade é o leitão assado num forno.</p>
+<a href="#" class="btn btn-warning">Reservar uma mesa</a>
+
+<h3>Estádio Santiago Bernabéu</h3>
+<p>Quem gosta de futebol e esportes simplesmente não pode sair de Madri sem conhecer esse estádio. Ele é a casa do Real Madrid. Palco de muitas conquistas.</p>
+<a href="#" class="btn btn-success">Agendar um tour</a>
+
+<h3>Museu do Prado</h3>
+<p>É o mais importante dos museus da cidade e o grande orgulho de Madri. Tem mais de quinze mil objetos de arte e guarda obras de autores como Velázquez e El Greco.</p>
+<a href="#" class="btn btn-success">Comprar tickets</a>
+
+<h3>Parque do Retiro</h3>
+<p>É a mais importante área verde de Madri. Os moradores da cidade vão ao parque para caminhar, praticar esportes ou simplesmente aproveitar um dia de sol. </p>
+<a href="#" class="btn btn-info">Clique e saiba mais</a>
+
+<h3>Parque Europa</h3>
+<p>El Parque Europa de Torrejon de Ardoz con sus mas de 230.000 m2 de superficie es la mayor zona verde de la ciudad y uno de los parques con mayor atractivo turistico.</p>
+<a href="#" class="btn btn-info">Clique e saiba mais</a>

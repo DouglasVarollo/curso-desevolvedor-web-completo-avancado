@@ -1,0 +1,208 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Curso de Bootstrap</title>
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=devide-width, initial-scale=1">
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <link href="_css/estilo.css" rel="stylesheet">
+    </head>
+    
+    <body>
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <section class="container">
+                <div class="navbar-header">
+                    <button type="button"
+                            class="navbar-toggle collapsed"
+                            data-toggle="collapse"
+                            data-target="#movelmenu"
+                            aria-expanded="false">
+
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>                      
+                    
+                    <a href="#" class="navbar-brand">
+                        <img src="_img/logo-conheca-madrid.png">
+                    </a>
+                </div>
+                
+                <div class="collapse navbar-collapse pull-right" id="movelmenu">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="home.html">HISTÓRIA</a></li>
+                        <li><a href="#">ONDE FICAR</a></li>
+                        <li><a href="#">DICAS</a></li>
+                        <li><a href="#">ONDE COMER</a></li>              
+                    </ul>               
+                </div>
+            </section>
+        </nav>  
+        
+        <!-- Digite abaixo seu codigo -->  
+        <div class="carousel slide" data-ride="carousel" id="galeria" >
+
+            <ol class="carousel-indicators">
+                <li data-target="#galeria" data-slide-to="0" class="active"></li>
+                <li data-target="#galeria" data-slide-to="1"></li>
+                <li data-target="#galeria" data-slide-to="2"></li>
+                <li data-target="#galeria" data-slide-to="3"></li>
+            </ol>  
+
+            <div class="carousel-inner">
+                <div class="item active">
+                    <img src="_img/20160312_142956.jpg" class="img-responsive">
+                </div>
+                <div class="item">
+                    <img src="_img/20160312_153210.jpg" class="img-responsive">
+                </div>
+                <div class="item">
+                    <img src="_img/20160313_154922.jpg" class="img-responsive">
+                </div>
+                <div class="item">
+                    <img src="_img/20160313_180102.jpg" class="img-responsive">
+                </div>
+            </div><!-- carousel-inner -->
+
+            <a class="left carousel-control" 
+               href="#galeria" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+            </a>
+
+            <a class="right carousel-control" 
+               href="#galeria" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+            </a>                
+        </div><!-- fim do carousel -->
+        
+        <div class="jumbotron">
+            <div class="container">
+                <h2>Conheça Madrid</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, in nam zril lobortis, vix in ubique tibique eligendi, mentitum volutpat usu in. 
+                    <span class="hidden-xs"> Ius an mucius nonumes partiendo, nam eu quidam essent definiebas. Cu possit tincidunt disputando pro, ad vix quot essent utamur. Vel wisi conceptam ei, vis quis eius eu. Ut eam amet ancillae, usu ne dolor commune comprehensam. Sit offendit iudicabit assentior an, ad nam clita detraxit, id cum vidit atomorum. Cu mei illum verterem, liber constituam sed an. Mel et magna lobortis intellegat, maluisset reprehendunt nec ut.</span>
+                </p>
+            </div>
+        </div>
+
+        <div class="container">    
+            <div class="row">
+                <div class="col-xs-6 col-md-4">
+                    <div class="thumbnail">
+                        <img src="_img/foto1.jpg">
+                        <div class="caption">
+                            <h3>Plaza Mayor</h3>
+                            <p>É um dos símbolos da cidade. A praça é grande e se destaca pela arquitetura com pedras, além de ser cheia de lojas e restaurantes nas suas extremidades.</p>
+                            <a href="#" class="btn btn-info">Agendar um tour</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-xs-6 col-md-4">
+                    <div class="thumbnail">
+                        <img src="_img/foto2.jpg">
+                        <div class="caption">
+                            <h3>Restaurante Botin</h3>
+                            <p>Em Madrid existe um restaurante que é considerado pelo Guinness Book of Records como o mais antigo do mundo. A sua especialidade é o leitão assado.</p>
+                            <a href="#" class="btn btn-warning">Reservar uma mesa</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-xs-6 col-md-4">   
+                    <div class="thumbnail">
+                        <img src="_img/foto3.jpg">
+                        <div class="caption">
+                            <h3>Santiago Bernabéu</h3>
+                            <p>Quem gosta de futebol e esportes simplesmente não pode sair de Madri sem conhecer esse estádio. Ele é a casa do Real Madrid. Palco de muitas conquistas.</p>
+                            <a href="#" class="btn btn-success">Agendar um tour</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-xs-6 col-md-4">
+                    <div class="thumbnail">
+                        <img src="_img/foto4.jpg">
+                        <div class="caption">
+                            <h3>Museu do Prado</h3>
+                            <p>É o mais importante dos museus da cidade e o grande orgulho de Madri. Tem mais de quinze mil objetos de arte e guarda obras de autores como Velázquez e El Greco.</p>
+                            <a href="#" class="btn btn-success">Comprar tickets</a>
+                        </div>
+                    </div>                
+                </div>
+                
+                <div class="clearfix visible-xs-block"></div>
+                
+                <div class="col-xs-6 col-md-4">
+                    <div class="thumbnail">
+                        <img src="_img/foto5.jpg">
+                        <div class="caption">
+                            <h3>Parque do Retiro</h3>
+                            <p>É a mais importante área verde de Madri. Os moradores da cidade vão ao parque para caminhar, praticar esportes ou simplesmente aproveitar um dia de sol. </p>
+                            <a href="#" class="btn btn-info">Clique e saiba mais</a>
+                        </div>
+                    </div>                
+                </div>  
+                
+                <div class="col-xs-6 col-md-4">    
+                    <div class="thumbnail">
+                        <img src="_img/foto6.jpg">
+                        <div class="caption">
+                            <h3>Parque Europa</h3>
+                            <p>El Parque Europa de Torrejon de Ardoz con sus mas de 230.000 m2 de superficie es la mayor zona verde de la ciudad y uno de los parques con mayor atractivo turistico.</p>
+                            <a href="#" class="btn btn-info">Clique e saiba mais</a>
+                        </div>
+                    </div>                
+                </div>
+                
+                
+            </div>  <!-- fim do row das atracoes turisticas -->          
+        </div>
+        
+        <div class="clearfix"></div>
+        
+        <div class="container">
+            <!-- row formulario -->
+            <div class="row">
+                                
+                <form class="form-horizontal col-xs-12 col-md-8 col-md-offset-2">
+                    <h3>Inscreva-se em nossa newsletter</h3>
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label" for="nome">Nome</label>
+                        <div class="col-sm-10">
+                            <input class="form-control" type="text" id="nome" placeholder="Seu nome">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label" for="email">Email</label>
+                        <div class="col-sm-10">    
+                            <input class="form-control"  type="email" id="email" placeholder="Seu email">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="checkbox">
+                            <div class="col-sm-10 col-sm-offset-2">
+                                <label for="lista">
+                                    <input type="checkbox" id="lista">Inscrever-me na newsletter
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="col-sm-10 col-sm-offset-2">
+                            <button class="btn btn-primary" type="submit" >Cadastrar-me</button>                
+                        </div>
+                    </div>
+                </form>
+            </div>    
+        </div>
+        <!-- Fim do seu codigo -->
+        <script src="../js/jquery.js"></script>
+        <script src="../js/bootstrap.min.js"></script>
+        <script src="_js/script.js"></script>
+    </body>
+</html>

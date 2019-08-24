@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Curso de Bootstrap</title>
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=devide-width, initial-scale=1">
+        
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <link href="_css/estilo.css" rel="stylesheet">
+    </head>
+    <body>
+        <!-- Digite abaixo seu codigo -->
+        <div class="container">
+            <h1>Nossos Cursos</h1>
+
+            <ul class="nav nav-pills nav-justified" role="tablist">
+                <li class="active" role="presentation">
+                    <a href="#ritmo" role="tab" data-toggle="tab">Ritmo</a>
+                </li>
+
+                <li role="presentation">
+                    <a href="#suporte" role="tab" data-toggle="tab">Suporte</a>
+                </li>
+
+                <li role="presentation">
+                    <a href="#pagamento" role="tab" data-toggle="tab">Pagamento</a>
+                </li>
+            </ul>
+
+            <div class="tab-content">
+                <div class="tab-pane active" id="ritmo" role="tabpanel">
+                    <h3>Define seu ritmo</h3>
+                    <p>Você escolhe, quais dias e horários deseja estudar e repetir a mesma aula quantas vezes quiser. Sem limites.</p>
+                </div>
+
+                <div class="tab-pane" id="suporte" role="tabpanel">
+                    <h3>Tire sua dúvidas</h3>
+                    <p>Disponibilizamos nossos instrutores para tirar suas dúvidas dos exercícios. Sabemos que errar faz parte do aprendizado. Conte conosco!</p>
+                </div>
+
+                <div class="tab-pane" id="pagamento" role="tabpanel">
+                    <h3>Pagar mês a mês</h3>
+                    <p>Você pode pagar sem comprometer o limite de seu cartão ou utilizar boleto bancário. E caso queira cancelar, não tem problema, nem vamos perguntar o motivo.</p>
+                </div>
+            </div>  
+        </div>
+        <!-- Fim do seu codigo -->
+        <script src="../js/jquery.js"></script>
+        <script src="../js/bootstrap.min.js"></script>
+        <script src="_js/script.js"></script>
+    </body>
+</html>
